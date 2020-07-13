@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            background-color:#e0e0e0;
+        }
+        h1, h5 {
+            margin: 1px;
+        }
+
+        .container {
+            background-color: #e1e1e1;
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid;
+        }
+
+        .item {
+            background-color: tomato;
+            margin: 5px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-1 {
+            flex: 1;
+        }
+
+        .flex-direction {
+            flex-direction: column;
+        }
+        
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+             max-width: 1200px;
+        }
+
+        .cmd_area {
+            background-color: rgb(217, 247, 247);
+            padding: 5px;
+            margin: ;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cmd_area">
+        <p>
+            Define o elemento como um flex container, tornando os seus filhos flex-itens.
+        </p>
+        <p>
+            display: flex; // Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.
+        </p>
+    </div>
+
+    <h1>Display block (normal)</h1>
+    <section class="container">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">Teste 3</div>
+    </section>
+
+    <h1>Display flex</h1>
+    <section class="container flex">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">Teste 3</div>
+        <div class="item">Teste 4</div>
+        <div class="item">Teste 5</div>
+        <div class="item">Teste 6</div>
+        <div class="item">Teste 7</div>
+        <div class="item">Teste 8</div>
+    </section>
+
+    <h1>Display flex wrap</h1>
+    <section class="container flex-wrap">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">Teste 3</div>
+        <div class="item">Teste 4</div>
+        <div class="item">Teste 5</div>
+        <div class="item">Teste 6</div>
+        <div class="item">Teste 7</div>
+        <div class="item">Teste 8</div>
+    </section>
+
+    <h1>Display flex 1 </h1>
+    <h5>Ajusta item no container</h5>
+    <section class="container flex-wrap">
+        <div class="item flex-1">Teste 1</div>
+        <div class="item flex-1">Teste 2</div>
+        <div class="item flex-1">Teste 3</div>
+        <div class="item flex-1">Teste 4</div>
+        <div class="item flex-1">Teste 5</div>
+        <div class="item flex-1">Teste 6</div>
+        <div class="item flex-1">Teste 7</div>
+        <div class="item flex-1">Teste 8</div>
+    </section>
+
+    <h1>Display flex direction: column </h1>
+    <section class="container flex-wrap flex-direction">
+        <div class="item flex-1">Teste 1</div>
+        <div class="item flex-1">Teste 2</div>
+        <div class="item flex-1">Teste 3</div>
+        <div class="item flex-1">Teste 4</div>
+    </section>
+</body>
+</html>

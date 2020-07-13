@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+       p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+             max-width: 1200px;
+        }
+
+        body {
+            font-family: monospace;
+	        color: #333;
+        }
+
+        h1, h5 {
+            text-align: center;
+            margin: 50px 0 0 0;
+            font-size: 1.25em;
+	        font-weight: normal;
+        }
+
+        .container {
+
+         width: 500px;
+         margin: 0 auto;
+         border: 1px solid #ccc;
+         padding: 4px;
+        }
+
+        .item {
+            background-color: tomato;
+            margin: 5px;
+	        text-align: center;
+	        font-size: 1.5em;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        /* FAZ OS ITENS QUEBRAR NO CONTAINER PULAR LINHA*/
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .flex-wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        /* FAZ OS ITENS USAR O CONTAINER INTEIRO */
+        .flex-1 {
+            flex:1;
+            
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .flex-column-reverse {
+            flex-direction: column-reverse;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1>teste com block (default)</h1>
+    <section class="container">
+        <div class="item">Coluna 1</div>
+        <div class="item">Coluna 2</div>
+        <div class="item">Coluna 3</div>
+    </section>
+
+    <h1>teste com flexbox</h1>
+    <section class="container flex">
+        <div class="item ">Coluna 1</div>
+        <div class="item ">Coluna 2</div>
+        <div class="item ">Coluna 3</div>
+        <div class="item ">Coluna 4</div>
+        <div class="item ">Coluna 5</div>
+        <div class="item ">Coluna 6</div>
+        <div class="item ">Coluna 7</div>
+    </section>
+
+    <h1>teste com flexbox wrap</h1>
+    <section class="container flex flex-wrap">
+        <div class="item ">Coluna 1</div>
+        <div class="item ">Coluna 2</div>
+        <div class="item ">Coluna 3</div>
+        <div class="item ">Coluna 4</div>
+        <div class="item ">Coluna 5zzzzzzzzzzzzzz</div>
+        <div class="item ">Coluna 6</div>
+        <div class="item ">Coluna 7</div>
+    </section>
+
+    <h1>teste com flexbox wrap reverse</h1>
+    <section class="container flex flex-wrap-reverse">
+        <div class="item ">Coluna 1</div>
+        <div class="item ">Coluna 2</div>
+        <div class="item ">Coluna 3</div>
+        <div class="item ">Coluna 4</div>
+        <div class="item ">Coluna 5zzzzzzzzzzzzz</div>
+        <div class="item ">Coluna 6</div>
+        <div class="item ">Coluna 7</div>
+    </section>
+
+    <h1>teste com flexbox flex direction column </h1>
+    <section class="container flex flex-column">
+        <div class="item ">Coluna 1</div>
+        <div class="item ">Coluna 2</div>
+        <div class="item ">Coluna 3</div>
+
+    </section>
+
+    <h1>teste com flexbox flex direction column-reverse </h1>
+    <section class="container flex flex-column-reverse">
+        <div class="item ">Coluna 1</div>
+        <div class="item ">Coluna 2</div>
+        <div class="item ">Coluna 3</div>
+        <div class="item ">Coluna 4</div>
+    </section>
+
+</body>
+</html>
+

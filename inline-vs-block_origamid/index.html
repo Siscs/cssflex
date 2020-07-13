@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inline vs Block</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h1>Display Block</h1>
+	
+<p>div, section, p, h1, h2, ul, li, article</p>
+	
+<ul>
+ <li>Ocupa 100% da largura do elemento pai</li>
+ <li>Ocupa sempre a sua própria linha e é posicionado abaixo do elemento anterior</li>
+ <li>A altura é definida de acordo com o conteúdo interno</li>
+ <li>É possível definir Width e Height</li>
+ <li>Você pode definir valores de margin-top e margin-bottom</li>
+</ul>
+
+<h1>Display Inline</h1>
+
+<p>a, span, b, i, em</p>
+	
+<ul>
+ <li>Ocupa a largura total do seu conteúdo apenas</li>
+ <li>Um elemento inline após outro elemento inline ocupam a mesma linha</li>
+ <li>Não é possível definir Width e Height</li>
+ <li>Não é possível definir valores de margin-top e margin-bottom</li>
+ <li>Ao aplicar o float, automaticamente eles assumem características de display block</li>
+ <li>Se aplicado dentro de um texto, irá seguir o fluxo do conteúdo</li>
+</ul>
+	
+<h1>Cursos de Web Design</h1>
+
+<section>
+	<h2>JavaScript e jQuery</h2>
+	<p>No curso de JavaScript e jQuery você irá aprender como manipular os elementos do DOM a partir de interações do usuário. Primeiro eu começo com os <a class="inline-block" href="#">fundamentos do JS</a>, ensinando a sintaxe, variáveis, funções, objetos e outros elementos básicos.</p>
+</section>
+
+<section>
+	<h2>UX Design</h2>
+	<p>No curso de JavaScript e jQuery você irá aprender como manipular os elementos do DOM a partir de interações do usuário.</p>
+	<a href="#">Veja Mais</a>
+	<a href="#">Sobre a Empresa</a>
+	<span>Características</span>
+</section>
+
+<span>
+	<h2>SASS</h2>
+	<span>Saiba mais</span>
+	<p>No curso de JavaScript e jQuery você irá aprender como manipular os <span>elementos do DOM</span> a partir de interações do usuário.</p>
+</span>
+
+<span>
+	<h2>Web Design</h2>
+	<p>No curso de <div>JavaScript e jQuery</div> você irá aprender como manipular os elementos do DOM a partir de interações do usuário.</p>
+</span>
+
+</body>
+</html>
